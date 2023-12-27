@@ -3,6 +3,8 @@ import { useState } from 'react'
 import clientPromise from '../lib/mongodb'
 import { InferGetServerSidePropsType } from 'next'
 
+
+// import "../style.index.css"
 import "tailwindcss/tailwind.css"
 import NewTodoForm from '../components/NewTodoForm'
 import Todos from '../components/Todos'
