@@ -85,7 +85,7 @@ export default function Detail() {
             <Button variant="danger" onClick={() => navigate("/")}>
               Kembali
             </Button>
-            <Button variant="primary" onClick={handleEdit} className="mx-2">
+            <Button variant="danger" onClick={handleEdit} className="mx-2">
               Edit
             </Button>
             <Button variant="danger" onClick={handleDelete}>
