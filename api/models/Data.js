@@ -25,14 +25,11 @@ const DataSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    description: {
-      type: String,
-      required: false,
-    },
     date: {
       type: Date,
       required: true,
     },
+
     category: {
       type: String,
       required: true,
@@ -50,6 +47,10 @@ const DataSchema = new mongoose.Schema(
       required: false,
     },
     registrationForm: {
+      type: String,
+      required: false,
+    },
+    description: {
       type: String,
       required: false,
     },
