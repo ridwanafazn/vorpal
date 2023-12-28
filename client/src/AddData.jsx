@@ -7,6 +7,7 @@ import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
 import Row from "react-bootstrap/Row";
 import axios from "axios";
+import "./App.css";
 
 // export default function AddData() {
 //   const [validated, setValidated] = useState(false);
@@ -312,12 +313,24 @@ export default function AddData() {
                 </Form.Group>
               </Row>
 
-              <Button type="submit" className="py-2 px-3 rounded btn">
-                Submit
-              </Button>
-              <a href="/" type="button" className="py-2 px-3 rounded btn ms-2">
-                Back
-              </a>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "flex-end",
+                  alignItems: "center",
+                }}
+              >
+                <Button type="submit" className="py-2 px-3 rounded btn-green">
+                  Submit
+                </Button>
+                <a
+                  href="/"
+                  type="button"
+                  className="py-2 px-3 rounded btn ms-2"
+                >
+                  Back
+                </a>
+              </div>
             </Form>
           </div>
         </div>
