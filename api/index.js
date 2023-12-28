@@ -1,7 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
-const Event = require("./models/Data"); // Assuming your model file is named Event.js
+const Event = require("./models/Data"); // Assuming your model file is named
 const cors = require("cors");
 
 dotenv.config();
