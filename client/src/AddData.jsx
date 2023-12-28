@@ -312,14 +312,10 @@ export default function AddData() {
                 </Form.Group>
               </Row>
 
-              <Button type="submit" className="py-2 px-3 rounded btn-red">
+              <Button type="submit" className="py-2 px-3 rounded btn">
                 Submit
               </Button>
-              <a
-                href="/"
-                type="button"
-                className="py-2 px-3 rounded btn-red ms-2"
-              >
+              <a href="/" type="button" className="py-2 px-3 rounded btn ms-2">
                 Back
               </a>
             </Form>

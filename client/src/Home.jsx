@@ -17,14 +17,18 @@ export default function Home() {
   return (
     <>
       <NavigationBar />
-      <div className="container hero">
+      <div
+        className="container hero"
+        style={{ display: "flex", justifyContent: "space-around" }}
+      >
         <div className="row d-flex align-items-center justify-content-evenly">
-          <div className="col-5 fw-bold text-capitalize">
+          <div
+            className="col-5 fw-bold text-capitalize"
+            style={{ borderBottom: "none" }}
+          >
             Notes and manages events
-            <a
-              className="badge rounded-pill btn-red fw-bold py-2 px-3 ms-3"
-              href="/add"
-            >
+            <a href="/add" style={{ textDecoration: "none", color: "green" }}>
+              {" "}
               Add
             </a>
           </div>
@@ -33,6 +37,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+
       <div className="container my-4">
         <div className="row">
           {events.map((event) => (
@@ -48,7 +53,7 @@ export default function Home() {
                   <Card.Text>{event.description}</Card.Text>
                   <a
                     href={`/detail/${event._id}`}
-                    className="py-2 px-3 rounded btn-green"
+                    className="py-2 px-3 rounded btn"
                   >
                     Detail
                   </a>
