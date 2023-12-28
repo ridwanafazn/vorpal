@@ -1,3 +1,6 @@
 # Vorpal : My Event Organizer
 
-Im in on the way, wait for me
+
+1. [App ([URL "Title"](https://vorpal.vercel.app)
+2. [Api ([URL "Title"](https://vorpal-api.vercel.app)
+   
