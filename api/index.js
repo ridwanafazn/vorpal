@@ -6,7 +6,9 @@ const cors = require("cors");
 
 dotenv.config();
 mongoose
-  .connect(process.env.MONGO_URL)
+  .connect(
+    "mongodb+srv://ridwanafzn:12323434rafzn@event-card.swinior.mongodb.net/test"
+  )
   .then(() => {
     console.log("Connected to MongoDB...");
   })
