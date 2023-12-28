@@ -31,7 +31,7 @@ export default function AddData() {
     setValidated(true);
 
     setValidated(true);
-    await axios.post("/data", {
+    await axios.post("/datas", {
       eventName,
       description,
       date,
