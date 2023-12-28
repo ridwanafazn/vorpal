@@ -1,3 +1,8 @@
 # Vorpal : My Event Organizer
 
-Im in on the way, wait for me
+## 1.
+## [App](https://vorpal.vercel.app)
+
+# 2.
+## [Api](https://vorpal-api.vercel.app)
+   
