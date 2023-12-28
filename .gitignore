@@ -3,3 +3,4 @@ client/.env
 .idea
 api/node_modules
 client/node_modules
+.vercel
