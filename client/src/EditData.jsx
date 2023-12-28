@@ -103,11 +103,18 @@ export default function EditData() {
                     onChange={(ev) => setCategory(ev.target.value)}
                     required
                   >
-                    <option disabled>Choose</option>
-                    <option value="Music">Music</option>
-                    <option value="Sports">Sports</option>
-                    <option value="Education">Education</option>
-                    {/* Add more categories as needed */}
+                    <option value="" disabled>
+                      Choose
+                    </option>
+                    <option value="Olahraga">Olahraga</option>
+                    <option value="Kesehatan Mental">Kesehatan Mental</option>
+                    <option value="Lingkungan">Lingkungan</option>
+                    <option value="Kemanusiaan">Kemanusiaan</option>
+                    <option value="Pendidikan">Pendidikan</option>
+                    <option value="Agama">Agama</option>
+                    <option value="Ekonomi">Ekonomi</option>
+                    <option value="Sosial">Sosial</option>
+                    <option value="Kemanusiaan">Kemanusiaan</option>
                   </Form.Control>
                   <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                 </Form.Group>
@@ -120,10 +127,14 @@ export default function EditData() {
                     onChange={(ev) => setEligibility(ev.target.value)}
                     required
                   >
-                    <option disabled>Choose</option>
-                    <option value="Open for all">Open for all</option>
-                    <option value="Age-restricted">Age-restricted</option>
-                    {/* Add more eligibility options as needed */}
+                    <option value="" disabled>
+                      Choose
+                    </option>
+                    <option value="Open for all">{">"}Open for all</option>
+                    <option value=">10 years old">{">"}10 years old</option>
+                    <option value=">15 years old">{">"}15 years old</option>
+                    <option value=">20 years old">{">"}20 years old</option>
+                    <option value=">30 years old">{">"}30 years old</option>
                   </Form.Control>
                   <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                 </Form.Group>

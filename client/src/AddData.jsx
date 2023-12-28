@@ -110,6 +110,7 @@ export default function AddData() {
                     <option value="" disabled>
                       Choose
                     </option>
+                    <option value="Open for all">{">"}Open for all</option>
                     <option value=">10 years old">{">"}10 years old</option>
                     <option value=">15 years old">{">"}15 years old</option>
                     <option value=">20 years old">{">"}20 years old</option>

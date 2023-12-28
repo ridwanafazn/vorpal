@@ -46,31 +46,33 @@ export default function Detail() {
     }
   };
 
-  return (
-    <>
-      <NavigationBar />
-      <div className="ctr">
-        <div id="result">
-          <div className="container">
-            <h2>Event Detail</h2>
-            <div className="row my-4">
-              <div className="col-10">
-                <img src={eventPhoto} className="poster" alt="Event Poster" />
-                <div className="row">
-                  <div className="col-12">
-                    <h5>{eventData.eventName}</h5>
-                    <p>{eventData.description}</p>
-                  </div>
-                </div>
-                <p>Date : {eventData.date}</p>
-                <p>Location : {eventData.location}</p>
-                <p>Category : {eventData.category}</p>
-                <p>Terms and Conditions : {eventData.eligibility}</p>
-                <p>Cost : {eventData.cost}</p>
-                <p>Registration Form : {eventData.registrationForm}</p>
-              </div>
-            </div>
+  const formattedDate = new Date(eventData.date).toLocaleDateString("id-ID", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  });
 
+  return (
+    <div className="ctr">
+      <div id="result">
+        <div className="container">
+          <h1 className="d-flex justify-content-center">Detail of Event</h1>
+          <h3 className="d-flex justify-content-center">
+            {eventData.eventName}
+          </h3>
+          <div className="row my-4">
+            <div className="col-10">
+              <p>Desc: &quot;{eventData.description}&quot;</p>
+              <p>Date: {formattedDate}</p>
+              <p>Location: {eventData.location}</p>
+              <p>Category: {eventData.category}</p>
+              <p>Terms and Conditions: {eventData.eligibility}</p>
+              <p>Cost: {eventData.cost}</p>
+              <p>Registration Form: {eventData.registrationForm} </p>
+            </div>
+          </div>
+
+          <div className="d-flex justify-content-center my-3">
             <Button variant="danger" onClick={() => navigate("/")}>
               Kembali
             </Button>
@@ -83,6 +85,6 @@ export default function Detail() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
