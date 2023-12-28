@@ -13,7 +13,8 @@ function App() {
   //   console.error("Error setting Axios base URL:", error);
   // }
 
-  axios.defaults.baseURL = "http://localhost:4040";
+  // axios.defaults.baseURL = "http://localhost:4040";
+  axios.defaults.baseURL = "https://vorpal-api.vercel.app/";
 
   return (
     <BrowserRouter>
